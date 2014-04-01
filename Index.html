@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Twuit</title>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/font-awesome.css" rel="stylesheet" />
+    <link href="StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+ 
+    <div class="well">
+        <!--Branding-->
+        <img src="Content/TwuitLogo.png"/>
+        <!--Text area for creating messages-->
+        <textarea maxlength="250" cols="50" rows="4" id="torchIt" class="position test" placeholder="Torch it..."></textarea>
+        <!--Send button-->
+        <div class="btn btn-danger positionTwo" onclick="myApp.sendTwuit(document.getElementById('torchIt').value)"><span class="glyphicon glyphicon-fire"></span></div>
+        <!--Pulls the tweets from all friends-->
+        <div class="btn btn-success" onclick="myApp.refreshFeed()"><span class="glyphicon glyphicon-refresh"></span></div>
+        <!--Button to add a friend-->
+        <div class="btn btn-primary" onclick="myApp.addFriend(document.getElementById('address').value)"><span class="glyphicon glyphicon-user"></span></div>
+        <input id="address" type="text"/>
+    </div>
+
+    <div class="move"></div>
+    <!--The News Feed.-->
+    <div id="torchedMessage" class="different panel panel-default"></div>
+    <!--Panel to display friends. Currently displays URLs, which are the connection to classmates firebase-->
+    <div id="friendsList" class="moveOne"></div>
+    <div class="btn btn-primary floatRight" onclick="myApp.showFriends()"><span class="glyphicon glyphicon-list"></span></div>
+
+
+    <script src="Scripts/jquery-1.9.0.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="JavaScript.js"></script>
+    <script src="Scripts/jquery-1.9.0.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="JavaScript.js"></script>
+</body>
+</html>

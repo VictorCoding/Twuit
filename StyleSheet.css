@@ -1,0 +1,65 @@
+﻿.position {
+    margin-left: 275px;
+  
+}
+.positionTwo {
+    margin-left: 560px;
+  
+}
+
+.move {
+    float: right;
+    height: 20px;
+    width: 33.33%;
+   
+}
+
+.moveOne {
+    float: right;
+    height: 250px;
+    width: 250px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    overflow-y: scroll;
+    background-color: lightblue;
+}
+
+.floatRight {
+    float: right;
+}
+
+.different {
+    float: right;
+    height: 500px;
+    width: 33.33%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    overflow-y: scroll;
+    background-color: lightblue;
+   
+}
+
+.test {
+    overflow-y: scroll;
+}
+
+.resize {
+    height: auto;
+    width: auto;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+#key-id {
+    visibility: hidden;
+}
+
+#deleteButton {
+    float: right;
+}
+
+.well {
+    background-color: lightblue;
+}
+
+
